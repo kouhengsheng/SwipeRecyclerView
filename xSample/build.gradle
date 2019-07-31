@@ -2,7 +2,6 @@ apply plugin: rootProject.ext.plugins.application
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
-    buildToolsVersion rootProject.ext.android.buildToolsVersion
 
     defaultConfig {
         applicationId rootProject.ext.android.applicationId
@@ -15,7 +14,6 @@ android {
 
 dependencies {
     implementation project(':x')
-
     implementation rootProject.ext.dependencies.xDesign
     implementation rootProject.ext.dependencies.xAppCompat
     implementation rootProject.ext.dependencies.xRecyclerView
